@@ -11,7 +11,7 @@ const appRoutes: Routes = [
         component: LoginComponent 
     },
     { 
-        path: 'outgoings', 
+        path: 'me', 
         component: OutgoingsComponent,
         canActivate: [AuthGuard]
     },

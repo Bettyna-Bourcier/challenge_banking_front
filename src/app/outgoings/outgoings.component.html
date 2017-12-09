@@ -1,3 +1,12 @@
-<p>
-  outgoings works!
-</p>
+<div class="text">
+  <h2>Hello {{user.firstName}} {{user.lastName}} ;) !</h2>
+  <h3>Here is the breakdown of your expenses by category :</h3>
+</div>
+<div style="display: block">
+  <canvas baseChart
+          [data]="pieChartData"
+          [labels]="pieChartLabels"
+          [chartType]="pieChartType"
+          [colors]="chartColors">
+  </canvas>
+</div>

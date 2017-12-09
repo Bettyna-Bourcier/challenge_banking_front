@@ -9,6 +9,8 @@ import { AuthGuard } from './auth.guard';
 import { AuthenticationService } from './services/authentication.service';
 import { LoginComponent } from './login/login.component';
 import { OutgoingsComponent } from './outgoings/outgoings.component';
+import { UserService } from './services/user.service';
+import { ChartsModule } from 'ng2-charts';
 
 
 
@@ -22,11 +24,13 @@ import { OutgoingsComponent } from './outgoings/outgoings.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    ChartsModule
   ],
   providers: [
     AuthGuard,
-    AuthenticationService
+    AuthenticationService,
+    UserService
   ],
   bootstrap: [AppComponent]
 })
