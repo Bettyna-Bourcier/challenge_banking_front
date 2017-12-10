@@ -35,6 +35,9 @@ export class LoginComponent implements OnInit {
                   this.error = 'Client number or password is incorrect';
                   this.loading = false;
               }
+          }, err => {
+            this.error = 'Client number or password is incorrect';
+            this.loading = false;
           });
   }
 
